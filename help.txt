@@ -1,0 +1,43 @@
+1.First create a database using mysql with the name="myapptest"
+2.Create two tables in the database with names "cities" and "doclist".
+3.For table cities:
+i)
+CREATE TABLE `cities` (
+`city_id` varchar(255) NOT NULL,
+`city_name` varchar(255) NOT NULL  )  
+ii)
+CREATE TABLE `doclist` (
+`doc_id` varchar(255) NOT NULL,
+`city_id` int(11) NOT NULL,
+`doctor_name` varchar(255) NOT NULL  ) 
+
+4.Insert data into cities and doclist
+i)
+INSERT INTO `cities` (`city_id`, `city_name`) VALUES 
+('1', 'Chandigarh'),
+('2', 'Mumbai'),
+('3', 'Delhi'),
+('4', 'Gurgaon'),
+('5', 'Kanpur'),
+('6', 'Bangalore');
+ii)
+INSERT INTO `doclist` (`doc_id`, `city_id`, `doctor_name`) VALUES 
+('1', 1, 'Aman'),
+('2', 1, 'Akash'),
+('3', 1, 'Sahil'),
+('4', 2, 'Avinash'),
+('5', 2, 'Shantanu'),
+('6', 3, 'Lokesh'),
+('7', 3, 'Anand'),
+('8', 4, 'Saroj'),
+('9', 4, 'Sagar'),
+('10', 4, 'Amit'),
+('11', 5, 'Ankush'),
+('12', 5, 'Sunil'),
+('13', 5, 'Sumit'),
+('14', 6, 'Mohan'),
+('15', 6, 'Mohit');
+
+5.Make sure that the database and table names are exactly same as written in the file or if you want to select your own database name
+change the database name in datab.php file so that the app can connect to the database and make sure to name your tables cities and doclist and 
+follow the same table structure as shown above.

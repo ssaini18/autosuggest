@@ -1,0 +1,36 @@
+#search, .result {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 300px;
+}
+
+.dropdown {
+	margin-left: 560px;
+	padding: 0;
+	border: 0;
+	width: 300px;
+}
+
+#search {
+	padding: 4px;
+	border: 1px solid #ccc;
+}
+
+.result {
+	width: 300px;
+	list-style: none;
+}
+
+.result li {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.result li:hover {
+	background: #ccc;
+	color: #fff;
+}
